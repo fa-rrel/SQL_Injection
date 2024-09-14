@@ -21,3 +21,6 @@ page=es_subscribers&is_ajax=1&action=_sent&advanced_filter[conditions][0][0][fie
 - Since all versions up to 5.7.14 were detected with the CVE, it’s recommended for users to upgrade the Email Subscribers by Icegram Express plug-in to version 5.7.15 (or the most recent release 5.7.19).
 - Patchstack users have the option to enable automatic updates specifically for vulnerable plugins.
 - Implement a WAF/WAAP solution as an additional layer of protection. The advantage of such solutions is that even if the vulnerability is new and unknown (0-day), it may still prevent attacks by detecting exploitation patterns and techniques.
+
+### Bounty Info 
+https://www.wordfence.com/blog/2024/04/1250-bounty-awarded-for-unauthenticated-sql-injection-vulnerability-patched-in-email-subscribers-by-icegram-express-wordpress-plugin/
