@@ -9,7 +9,7 @@ The Country State City Dropdown CF7 plugin for WordPress is vulnerable to SQL In
 ### Query CVE-2024-2876
 - FOFA : body="/wp-content/plugins/email-subscribers/"
 - publicwww : "/wp-content/plugins/email-subscribers/"
-### ### Query CVE-2024-3495
+### Query CVE-2024-3495
 - FOFA : body="/wp-content/plugins/country-state-city-auto-dropdown" && header="HTTP/1.1 200 OK"
 - Publicwww : "/wp-content/plugins/country-state-city-auto-dropdown"
 - shodan : "http.title:admin-ajax.php"
